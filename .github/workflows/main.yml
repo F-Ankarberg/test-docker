@@ -16,7 +16,6 @@ jobs:
           docker compose -f ../test-docker/docker-compose.yml up          
       - name: Display logs
         run: |
-          docker logs -f script1
-          docker logs -f script2
+          docker compose -f ../test-docker/docker-compose.yml logs -f
           
           
