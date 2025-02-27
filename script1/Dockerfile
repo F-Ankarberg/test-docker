@@ -5,4 +5,4 @@ WORKDIR /app
 COPY script1.ps1 .
 
 
-CMD ["pwsh", "-File", "script1.ps1"]
+CMD ["pwsh", "./script1.ps1"]
