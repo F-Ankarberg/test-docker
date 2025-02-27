@@ -13,5 +13,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Build and run scripts
         run: |
-          docker-compose -f docker-compose.yml up -d script1
-          docker-compose -f docker-compose.yml up -d script2
+          /home/bgrfan/test-docker/docker-compose -f docker-compose.yml up -d script1
+          /home/bgrfan/test-docker/docker-compose -f docker-compose.yml up -d script2
