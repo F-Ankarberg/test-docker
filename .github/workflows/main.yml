@@ -13,9 +13,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Build and run scripts
         run: |
-          docker compose -f ../test-docker/docker-compose.yml up          
-      - name: Display logs
-        run: |
-          docker compose -f ../test-docker/docker-compose.yml logs -f
-          
-          
+          docker compose -f ../test-docker/docker-compose.yml up --build     
+      
