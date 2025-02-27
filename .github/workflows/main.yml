@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-run:
-    runs-on: [self-hosted, BGR-PF4662FN]
+    runs-on: [self-hosted]
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
