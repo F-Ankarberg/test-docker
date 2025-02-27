@@ -1,0 +1,16 @@
+name: Build and Run Scripts Scheduled
+
+on:
+  cron:
+    - '0 6-16 * * *'
+
+jobs:
+  build-and-run:
+    runs-on: [self-hosted]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build and run scripts scheduled
+        run: |
+          docker compose -f ../test-docker/docker-compose.yml up --build
+      
