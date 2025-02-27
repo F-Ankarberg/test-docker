@@ -1,10 +1,10 @@
 version: '3'
 services:
   script1:
-    build: https://github.com/F-Ankarberg/test-docker.git:script1
+    build: https://github.com/F-Ankarberg/test-docker.git
     environment:
       - VARS=1
   script2:
-    build: https://github.com/F-Ankarberg/test-docker.git:script2
+    build: https://github.com/F-Ankarberg/test-docker.git
     environment:
       - VARS=2
