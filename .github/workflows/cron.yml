@@ -1,4 +1,4 @@
-name: Build and Run Scripts Scheduled
+name: Run Scripts Scheduled
 
 on:
   schedule:
@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Build and run scripts scheduled
+      - name: Run scripts scheduled
         run: |
-          docker compose -f ../test-docker/docker-compose.yml up --build
+          docker compose -f ../test-docker/docker-compose.yml up
       
