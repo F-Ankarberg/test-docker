@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/powershell:7.2
+FROM mcr.microsoft.com/powershell:latest
 
 WORKDIR /app
 
