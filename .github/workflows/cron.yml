@@ -1,8 +1,8 @@
 name: Build and Run Scripts Scheduled
 
 on:
-  cron:
-    - '0 6-16 * * *'
+  schedule:
+    - cron: '0 6-16 * * *'
 
 jobs:
   build-and-run:
